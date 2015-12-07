@@ -2,7 +2,7 @@
 
 ## Install
 ```
-go get github.com/carmark/pseudo-terminal-go/terminal
+go get github.com/jaredririe/pseudo-terminal-go/terminal
 ```
 
 ## Run a test

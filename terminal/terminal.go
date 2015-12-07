@@ -457,7 +457,7 @@ func (t *Terminal) handleKey(key int) (line string, ok bool) {
 		if t.echo {
 			t.writeLine(t.line[t.pos-1:])
 		}
-		t.pos ++
+		t.pos++
 		t.moveCursorToPos(t.pos)
 		t.queue([]byte("\r\n"))
 		t.line = make([]byte, 0, 0)
@@ -692,10 +692,10 @@ func (t *Terminal) SetHistory(h []string) {
 }
 
 func (t *Terminal) GetHistory() (h []string) {
-	// h = make([]string, len(t.history))
-	// for i := range t.history {
-	// 	h[i] = string(t.history[i])
-	// }
+	h = make([]string, len(t.history))
+	for i := range t.history {
+		h[i] = string(t.history[i])
+	}
 	return
 }
 
